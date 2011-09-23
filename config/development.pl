@@ -17,9 +17,12 @@ return +{
         },
     },
     datasource => +{
-        master => +{
-            dsn => 'dbi:mysql:twitter_paste;user=root',
-        },
+        master => [
+            'dbi:mysql:twitter_paste',
+            'root',
+            '',
+            { RaiseError => 1, mysql_connect_timeout => 4, mysql_enable_utf8 => 1 },
+        ],
     },
     hostname => +{
     },

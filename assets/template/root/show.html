@@ -1,0 +1,8 @@
+:cascade layout;
+:around content -> {
+<p><a href="/">top</a></p>
+<p>
+    : $content.body
+</p>
+:}
+

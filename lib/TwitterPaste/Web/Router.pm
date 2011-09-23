@@ -12,13 +12,13 @@ connect(
 
 connect(
     '/callback',
-    {controller => 'Root', action => 'login'},
+    {controller => 'Root', action => 'callback'},
     {},
 );
 
 connect(
     '/add',
-    {controller => 'Root', action => 'login'},
+    {controller => 'Root', action => 'add'},
     {},
 );
 
